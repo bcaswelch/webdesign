@@ -1,3 +1,13 @@
+@font-face {
+	font-family: "Roboto";
+	src: url('../fonts/Roboto-Light.ttf');
+}
+
+body {
+	font-family: Roboto, "Helvetica Nue", Helvetica, sans-serif;
+	padding-bottom: 70px;
+}
+
 #sidebar-wrapper {
 	background: #037CB7;
 }
@@ -15,5 +25,97 @@
 }
 
 #page-jumbo {
-	background: url('images/jumbo-bkg.png');
+	background: url('../images/jumbo-bkg-v2.png');
+	color:#FFF;
+	margin:0;
+}
+
+#page-jumbo p {
+	font-size: 27px;
+}
+
+#page-jumbo h1 {
+	font-size:74px;
+}
+
+.jumbo-text {
+	position: absolute;
+	top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-heading {
+	/*color: #037CB7;*/
+	font-size:50px;
+}
+
+.section {
+	padding: 50px 0;
+}
+
+.section-text {
+	font-size: 22px;
+	line-height: 34px;
+	max-width:600px;
+	font-weight: 100;
+}
+
+.section:nth-child(even) {
+	background: #f7f7f7;
+}
+
+.column {
+	padding-bottom: 30px;
+}
+
+.tooltip-image {
+	position: relative;
+}
+
+.button {
+	cursor: pointer;
+	background: #039be5;
+	border-radius: 100%;
+	height:30px;
+	width:30px;
+	position:absolute;
+}
+
+
+.button.visited {
+	background: #037CB7;
+}
+
+.button.active {
+	background: #ff7f00;
+}
+
+#button1{
+	bottom:55%;
+	right:10%;
+}
+	
+#button2{
+	left:20%;
+	top:6%;
+}
+
+#button3{
+	bottom:32%;
+	left:35%;
+}
+
+#button4{
+	right:20%;
+	top:12%;
+}
+
+.featuretext {
+
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		display: none;
+	}
 }
