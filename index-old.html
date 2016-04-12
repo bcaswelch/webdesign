@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Webdesign</title>
+<!--CSS Page-->
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+<!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+<!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<!--Don't Touch-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+  $('.button').click( function(event) {
+    var index = $(this).index();
+
+    $('.featuretext').hide();
+    $(".featuretext").eq(index).show();
+  });
+});
+</script>
+<!--Don't Touch-->
+
+
+</head>
+
+<div class="side1">
+
+<div class="container">
+
+<header>
+<div id="logo"></div>
+<nav>
+	
+</nav>
+
+</header>
+
+<section id="main">
+
+<ul>
+<li><a class="toptext"><p class="text">Meet ViPC, a revolutionary computer platform that combines the power of a full-sized desktop with the portability of a mini computer</p></a></li>
+</ul>
+
+
+
+<nav class="scroll">
+<div class="imagecontainer1">
+<img src="images/vicasemain.png">
+    
+    <ul>
+		<li><a class="sidebar1"></a></li>
+        <li><a class="sidebar2"></a></li>
+	</ul>
+    <p id="gallery">Products Gallery</p>
+</div>
+</nav>
+
+        
+       <a class="menuitem"><p class="text">ViPC is a new standard built for the m-ITX form-factor, set to change the way small form factor computer has been viewed in the past. </p></a>
+       <a class="menuitem"><p class="text">ViPC is a new standard built for the m-ITX form-factor, set to change the way small form factor computer has been viewed in the past. </p></a>
+ 
+</section>
+</div><!--end container-->
+
+<div class="container2">
+<section id="main2">
+
+<p id="cases">Use Cases</p>
+
+<div class="imagecontainer2">
+<img src="images/usecase.png">
+
+<!--<nav>
+	<ul>
+  
+        <li>
+        <div class="menuitem2">
+  <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo">Designers</button>
+  <div id="demo" class="collapse">
+    The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+  </div>
+</div>
+        </li>
+        <li><div class="menuitem2">
+  <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo2">Gamers</button>
+  <div id="demo2" class="collapse">
+    The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+  </div>
+</div></li>
+        
+        <li><div class="menuitem2">
+  <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo3">Photographers</button>
+  <div id="demo3" class="collapse">
+    The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+  </div>
+  </div>
+</li>
+    </ul>
+</nav>-->
+
+<div class="panel-group" id="accordion" role="tablist">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Designers
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Gamers
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Photographers
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+<div class="container">
+
+<section id="main3">
+
+<p id="features">Features</p>
+
+
+<div id="banner3">
+<div class="imagecontainer">
+<img src="images/assembly.png">
+
+<!--Their code-->
+
+
+<div class="buttons">
+<a id="showdiv1" class="button"></a>
+<a id="showdiv2" class="button"></a>
+<a id="showdiv3" class="button"></a>
+<a id="showdiv4" class="button"></a>
+</div>
+<div class="featuretext-container">
+<div id="div1" class="featuretext">Supports standard desktop parts to make your life easier and more cost efficient when it comes to upgrading parts</div>
+<div id="div2" class="featuretext">Don't let size compromise performance; ViPC supports high end components such as an Intel Quad Core CPU and Workstation Graphics to give plently of power when you need it</div>
+<div id="div3" class="featuretext">ViPC is built around a high quality aluminium case, CNC cut with venting holes and brackets to ensure the outside remains sleek while keeping the inside protected</div>
+<div id="div4" class="featuretext">Our custom fans were designed specifically for ViPC, Using the maximum amount of space possible to decrease fan noise and low system temperatures</div>
+</div>
+
+
+<!--Their code-->
+</div>
+</div>
+
+</section>
+
+</div>
+
+<div class="container">
+<section id="main4">
+
+<p id="contact">Contact</p>
+
+<div id="banner4"></div>
+
+</section>
+
+</div>
+</div>
+</div>
+
+
+<div class="side2">
+
+<footer>
+<div class="vertical"></div>
+<nav>
+	<ul>
+    	<li><a href="#logo" class="navigation" >Home</a></li>
+        <li><a href="#cases" class="navigation" >Use Cases</a></li>
+        <li><a href="#features" class="navigation" >Features</a></li>
+        <li><a href="#contact" class="navigation" >Contact</a></li>
+    </ul>
+</nav>
+
+</footer>
+
+<nav class="navbar navbar-default mobile-nav navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</div>
+</html>

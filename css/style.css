@@ -1,0 +1,19 @@
+#sidebar-wrapper {
+	background: #037CB7;
+}
+.sidebar-nav li {
+	line-height: 100px;
+}
+.sidebar-nav li a, .sidebar-nav .sidebar-brand a,  .sidebar-nav .sidebar-brand a:hover{
+	color:#FFF;
+}
+.sidebar-nav li a:hover {
+	background: #026392;
+}
+#page-content-wrapper {
+	padding:0;
+}
+
+#page-jumbo {
+	background: url('images/jumbo-bkg.png');
+}
