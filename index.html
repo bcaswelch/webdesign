@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 </head>
 
-<body class="side1">
+<div class="side1">
 
 <div class="container">
 
@@ -93,7 +93,7 @@ $(document).ready(function(){
 <div class="imagecontainer2">
 <img src="images/usecase.png">
 
-<nav>
+<!--<nav>
 	<ul>
   
         <li>
@@ -119,7 +119,52 @@ $(document).ready(function(){
   </div>
 </li>
     </ul>
-</nav>
+</nav>-->
+
+<div class="panel-group" id="accordion" role="tablist">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Designers
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Gamers
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Photographers
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 </section>
@@ -171,10 +216,10 @@ $(document).ready(function(){
 
 </div>
 </div>
-</body>
+</div>
 
 
-<body class="side2">
+<div class="side2">
 
 <footer>
 <div class="vertical"></div>
@@ -189,5 +234,38 @@ $(document).ready(function(){
 
 </footer>
 
-</body>
+<nav class="navbar navbar-default mobile-nav navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</div>
 </html>
