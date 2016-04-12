@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>untitled</title>
+<!--CSS Page-->
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--Don't Touch-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+<!--Don't Touch-->
+</script>
+
+<script type="text/javascript">
+$('#showdiv1').click(function(){
+    $('div[id^=div]').hide();
+    $('#div1').show();
+});
+$('#showdiv2').click(function(){
+    $('div[id^=div]').hide();
+    $('#div2').show();
+});
+
+$('#showdiv3').click(function(){
+    $('div[id^=div]').hide();
+    $('#div3').show();
+});
+
+$('#showdiv4').click(function(){
+    $('div[id^=div]').hide();
+    $('#div4').show();
+});
+</script>
+
+
+</head>
+
+<body class="side1">
+
+<div class="container">
+
+<header>
+<div id="logo"></div>
+<nav>
+	
+</nav>
+
+</header>
+
+<section id="main">
+
+<ul>
+<li><a class="toptext"><p class="text">Meet ViPC, a revolutionary computer platform that combines the power of a full-sized desktop with the portability of a mini computer</p></a></li>
+</ul>
+
+
+
+<nav class="scroll">
+<div class="imagecontainer1">
+<img src="images/vicasemain.png">
+    
+    <ul>
+		<li><a class="sidebar1"></a></li>
+        <li><a class="sidebar2"></a></li>
+	</ul>
+    <p id="gallery">Products Gallery</p>
+</div>
+</nav>
+
+        
+       <a class="menuitem"><p class="text">ViPC is a new standard built for the m-ITX form-factor, set to change the way small form factor computer has been viewed in the past. </p></a>
+       <a class="menuitem"><p class="text">ViPC is a new standard built for the m-ITX form-factor, set to change the way small form factor computer has been viewed in the past. </p></a>
+ 
+</section>
+</div><!--end container-->
+
+<div class="container2">
+<section id="main2">
+
+<p id="cases">Use Cases</p>
+
+<div class="imagecontainer2">
+<img src="images/usecase.png">
+
+<nav>
+	<ul>
+  
+        <li>
+        <div class="menuitem2">
+  <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo">Designers</button>
+  <div id="demo" class="collapse">
+    The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+  </div>
+</div>
+        </li>
+        <li><div class="menuitem2">
+  <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo2">Gamers</button>
+  <div id="demo2" class="collapse">
+    The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+  </div>
+</div></li>
+        
+        <li><div class="menuitem2">
+  <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo3">Photographers</button>
+  <div id="demo3" class="collapse">
+    The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
+  </div>
+  </div>
+</li>
+    </ul>
+</nav>
+
+</div>
+</section>
+
+<div class="container">
+
+<section id="main3">
+
+<p id="features">Features</p>
+
+
+<div id="banner3">
+<div class="imagecontainer">
+<img src="images/assembly.png">
+
+<!--Their code-->
+
+
+<div class="buttons">
+<a href="button" id="showdiv1"></a>
+<a href="button" id="showdiv2"></a>
+<a href="button" id="showdiv3"></a>
+<a href="button" id="showdiv4"></a>
+</div>
+<div id="div1" class="featuretext">Supports standard desktop parts to make your life easier and more cost efficient when it comes to upgrading parts</div>
+<div id="div2" class="featuretext">Don't let size compromise performance; ViPC supports high end components such as an Intel Quad Core CPU and Workstation Graphics to give plently of power when you need it</div>
+<div id="div3" class="featuretext">ViPC is built around a high quality aluminium case, CNC cut with venting holes and brackets to ensure the outside remains sleek while keeping the inside protected</div>
+<div id="div4" class="featuretext">Our custom fans were designed specifically for ViPC, Using the maximum amount of space possible to decrease fan noise and low system temperatures</div>
+
+
+<!--Their code-->
+</div>
+</div>
+
+</section>
+
+</div>
+
+<div class="container">
+<section id="main4">
+
+<p id="contact">Contact</p>
+
+<div id="banner4"></div>
+
+</section>
+
+</div>
+</div>
+</body>
+
+
+<body class="side2">
+
+<footer>
+<div class="vertical"></div>
+<nav>
+	<ul>
+    	<li><a href="#logo" class="navigation" >Home</a></li>
+        <li><a href="#cases" class="navigation" >Use Cases</a></li>
+        <li><a href="#features" class="navigation" >Features</a></li>
+        <li><a href="#contact" class="navigation" >Contact</a></li>
+    </ul>
+</nav>
+
+</footer>
+
+</body>
+</html>
