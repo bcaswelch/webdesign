@@ -39,18 +39,18 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
+                    <a href="#wrapper">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#">Use Cases</a>
+                    <a href="#use-cases">Use Cases</a>
                 </li>
                 <li>
-                    <a href="#">Features</a>
+                    <a href="#features">Features</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -98,7 +98,7 @@
             </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="use-cases">
             <div class="container-fluid">
                 <h1 class="section-heading text-center">Use Cases</h1>
                 <p class="center-block text-center section-text">Bacon ipsum dolor amet hamburger pastrami short loin picanha, frankfurter t-bone pork loin chuck ham hock beef pork fatback ham swine drumstick.</p>
@@ -152,7 +152,7 @@
             </div>
             </div>
             <div class="section">
-                <div class="container-fluid">
+                <div class="container-fluid" id="features">
                     <h1 class="section-heading text-center">Features</h1>
                     <p class="text-center">Click on a dot!</p>
                     <div class="center-block tooltip-image" style="max-width: 503px;">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section">
+            <div class="section" id="contact">
                 <div class="container-fluid">
                     <div class="section-heading text-center">Contact</div>
                 </div>
@@ -193,21 +193,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li class="active"><a href="#wrapper">Home</a></li>
+                    <li><a href="#use-cases">Use Cases</a></li>
+                    <li><a href="#features">Features</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>
@@ -226,6 +215,20 @@
 
     <!-- Menu Toggle Script -->
     <script>
+
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
