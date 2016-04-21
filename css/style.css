@@ -3,8 +3,20 @@
 	src: url('../fonts/Roboto-Light.ttf');
 }
 
+@font-face {
+	font-family: '';
+	src: url('./MYRIADPROREGULAR.eot');
+	src: local('MYRIADPROREGULAR'), url('./MYRIADPROREGULAR.woff') format('woff'), url('./MYRIADPROREGULAR.ttf') format('truetype');
+}
+
+.text-center {
+	padding-bottom:30px;	
+}
+
+
+
 body {
-	font-family: Roboto, "Helvetica Nue", Helvetica, sans-serif;
+	font-family: MYRIADPROREGULAR, Roboto, "Helvetica Nue", Helvetica, sans-serif;
 	padding-bottom: 70px;
 }
 
@@ -25,7 +37,7 @@ body {
 }
 
 #page-jumbo {
-	background: url('../images/jumbo-bkg-v2.png');
+	background-color:#2C43AB;
 	color:#FFF;
 	margin:0;
 }
@@ -36,12 +48,6 @@ body {
 
 #page-jumbo h1 {
 	font-size:74px;
-}
-
-.jumbo-text {
-	position: absolute;
-	top: 50%;
-  transform: translateY(-50%);
 }
 
 .section-heading {
@@ -81,6 +87,9 @@ body {
 	position:absolute;
 }
 
+.panel-title a {
+	display:block;
+}
 
 .button.visited {
 	background: #037CB7;
@@ -92,25 +101,33 @@ body {
 
 #button1{
 	bottom:55%;
-	right:10%;
+	right:5%;
 }
 	
 #button2{
-	left:20%;
-	top:6%;
+	left:23%;
+	top:4%;
 }
 
 #button3{
-	bottom:32%;
-	left:35%;
+	bottom:22%;
+	left:18%;
 }
 
 #button4{
-	right:20%;
-	top:12%;
+	right:12%;
+	top:8%;
 }
 
 .featuretext {
+
+}
+
+@media (max-width: 768px) {
+	
+.jumbo-img{
+	margin: 0 auto;
+}
 
 }
 
@@ -118,4 +135,5 @@ body {
 	.navbar {
 		display: none;
 	}
+	
 }
