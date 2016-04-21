@@ -39,19 +39,19 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#wrapper">
+                    <a class="page-nav" href="#wrapper">
                         Home
                         
                     </a>
                 </li>
                 <li>
-                    <a href="#use-cases">Use Cases</a>
+                    <a class="page-nav" href="#use-cases">Use Cases</a>
                 </li>
                 <li>
-                    <a href="#features">Features</a>
+                    <a class="page-nav" href="#features">Features</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a class="page-nav" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -185,7 +185,7 @@
 </tr>
  
 <tr>
- <td valign="top"">
+ <td valign="top">
   <label for="last_name">Last Name *</label>
 
  <td valign="top">
@@ -266,7 +266,7 @@
     <!-- Menu Toggle Script -->
     <script>
 
-    $('a[href^="#"]').on('click',function (e) {
+    $('a.page-nav').on('click',function (e) {
         e.preventDefault();
 
         var target = this.hash;
